@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./beta.js"></script>
+    <script src="./KernelJS.js"></script>
+    <link rel="stylesheet" href="./beta.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="ServerElement">
+        
+    </section>
+
+    <section id="ServerControlPanel">
+       <section id="ServerControlPanelWindo">
+           <label id="ServerControlPanelWindoNameWindo" for="">
+                Пареметры сервера
+           </label>
+           <section id="ServerControlPanelWindoClose">
+               Выход
+           </section>           
+       </section>
+
+        <section id="ServerControlPanelListMenu">
+            <section id="MenuSelect1" class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Кофигурация
+                </label>                
+            </section>
+            <section id="MenuSelect2" class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Пользователи
+                </label>
+            </section>
+            <section id="MenuSelect3" class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Добавить новый хост
+                </label>                
+            </section>
+            <section class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Упрвления группами хостов
+                </label>                
+            </section>
+            <section class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Логирование событий
+                </label>                  
+            </section>
+            <section class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Резервное копирование
+                </label>                
+            </section>
+            <section class="ServerControlPanelListMenuClass">
+                <label for="">
+                    Внешний вид
+                </label>                
+            </section>
+        </section>
+
+
+
+        <section id="ConfigServerWindo" class="ConfigServerWindoClass">
+            <label for="" id="AdressServerWebLabel">web адрес: http://127.0.0.1:8080</label>
+            <label for="" id="ListIpServerLabel">
+                Имя хоста сервера
+            </label>
+            <input type="text" name="" id="HostNameInput" value="127.0.0.1">
+            <label for="" id="WebPortServerLabel">
+                Порт WEB интерфейса
+            </label>
+            <input type="text" name="" id="WebPortInput" value="8080">
+
+            <label for="" id="LoginSuperAdminLabel">
+                Логин супер администратора
+            </label>
+            <input type="text" name="" id="LoginSuperAdminInput" value="Administrator">
+
+            <label for="" id="PasswordSuperAdminLabel">
+                Старый пароль супер администратора
+            </label>
+            <input type="password" name="" id="PasswordSuperAdminInput" value="Administrator">
+
+            <label for="" id="NewPasswordSuperAdminLabel">
+                Новый пароль супер администратора
+            </label>
+            <input type="password" name="" id="NewPasswordSuperAdminInput" value="Administrator">
+
+            <label for="" id="New2PasswordSuperAdminLabel">
+                Повторите новый пароль супер администратора
+            </label>
+            <input type="password" name="" id="New2PasswordSuperAdminInput" value="Administrator">
+
+            <button id="SaveSettingServer">
+                Сохранить
+            </button>
+        </section>
+
+
+        <section id="UsersServerWindo">
+
+
+
+
+                <section class="WindoUserChang">
+                   <button id="Exit">x</button>
+                   <p id="TextBlock1" class="WindoUserChangTextBlocks">Логин</p>
+                   <input type="text" name="" id="Login" class="WindoUserChangTextBlocks" placeholder="Поле для вода логина">
+                   <p id="TextBlock2" class="WindoUserChangTextBlocks">
+                       Придумайте пароль
+                   </p>
+                   <input type="password" name="" id="Password" class="WindoUserChangTextBlocks" placeholder="Поле для вода Пароля">
+                   <p id="TextBlock3" class="WindoUserChangTextBlocks">
+                        Повторите пароль
+                    </p>
+                    <input type="password" name="" id="Password2" class="WindoUserChangTextBlocks" placeholder="Поле для вода Пароля">
+                    <p id="TextBlock4" class="WindoUserChangTextBlocks">
+                        IP
+                    </p>
+                    <input type="text" name="" id="IP" class="WindoUserChangTextBlocks" placeholder="Поле для вода IP">
+                    <button id="Seve">
+                        Сохранить
+                    </button>
+                </section>
+      
+               
+
+
+
+
+
+
+            <section class="PanelControlUser">
+                <button id="NewUser">
+                    Новый
+                </button>
+                <button>
+                    Удалить
+                </button>
+            
+            </section>
+
+            
+        </section>
+
+        <section id="AddNewHostForm">
+            <label for="" class="AddNewHostFormTextStyle">
+                Создание нового хоста
+            </label>
+            <input type="text" name="" id="IP" placeholder="IP: 10.23.3.22" class="AddNewHostFormTextStyle">
+            <input type="text" name="" id="Name_Host" placeholder="С2000-Ethernet В АБК МЕХ ЦЕХ" class="AddNewHostFormTextStyle">
+            <button id="Pint_Test" class="AddNewHostFormTextStyle">
+                Тестирование
+            </button>
+           <textarea class="AddNewHostFormTextStyle" name="" id="" cols="30" rows="10"  disabled>
+            64 bytes from ya.ru (87.250.250.242): icmp_seq=1 ttl=53 time=59.9 ms
+            64 bytes from ya.ru (87.250.250.242): icmp_seq=2 ttl=53 time=60.6 ms
+            64 bytes from ya.ru (87.250.250.242): icmp_seq=3 ttl=53 time=59.9 ms
+            64 bytes from ya.ru (87.250.250.242): icmp_seq=4 ttl=53 time=59.9 ms
+            
+           </textarea>
+           <button id="SeveInfo" class="AddNewHostFormTextStyle">
+               Сохранить
+           </button>
+            
+        </section>
+        
+    
+</body>
+</html>

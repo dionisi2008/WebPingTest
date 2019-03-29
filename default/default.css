@@ -1,0 +1,20 @@
+
+
+
+@keyframes AnimLoadNextForm
+{
+    from
+    {
+
+    }
+    to
+    {
+        transform: translateY(222px);
+    }
+}
+
+
+body
+{
+    animation: AnimBodyLoad 5s;
+}
