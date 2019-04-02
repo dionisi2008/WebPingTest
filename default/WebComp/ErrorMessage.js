@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function ()
         }
 
         MessageSend(Message, ErrorState)
-        {
+        {            
             var LabelErrorElem = this.getElementsByTagName("label")[0];            
             LabelErrorElem.innerText = Message;
             if (ErrorState == true)
